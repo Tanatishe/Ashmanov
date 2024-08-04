@@ -1,15 +1,9 @@
 import requests
-from bs4 import BeautifulSoup
-import argparse
 
-parser = argparse.ArgumentParser(description='Get Google Count.')
-parser.add_argument('word', help='word to count')
-args = parser.parse_args()
 
-r = requests.get('http://www.google.com/search',
-                 params={'q':'"'+args.word+'"',
-                         "tbs":"li:1"}
-                )
 
-soup = BeautifulSoup(r.text)
-print (soup.find('div',{'id':'resultStats'}).text)
+
+
+r = requests.get('http://127.0.0.1:8000?q=test+search')
+
+print(r.text)

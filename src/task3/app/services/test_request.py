@@ -9,7 +9,7 @@ def redirect(request):
     url = "https://www.google.com/"
     request = request
     response = requests.get(
-        url=f"{url}search?q={req}",
+        url=f"{url}search?q={request}",
         headers=user_agent
     )
     return response

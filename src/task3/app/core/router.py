@@ -10,9 +10,13 @@ router = APIRouter()
 
 
 @router.get('/')
-async def get_request():
-    response = redirect('vbirf')
-    answer = parse_google_results(response)
+async def get_request(q):
+    query = q
+    response = redirect(query)
+    html = response.text
+    with open('test.html', 'w', encoding='UTF-8') as f:
+        f.write(html)
+    answer = parse_google_results(html)
     return answer
 
 
