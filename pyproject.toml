@@ -15,6 +15,7 @@ uvicorn = "^0.30.5"
 pydantic-settings = "^2.4.0"
 requests-async = "^0.6.2"
 beautifulsoup4 = "^4.12.3"
+aiohttp = "^3.10.1"
 
 
 [build-system]
