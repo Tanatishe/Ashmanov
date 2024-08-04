@@ -21,7 +21,7 @@ def mask_string(input_string: str) -> str:
     masked_string = pattern.sub(replacement, input_string)
     return masked_string
 
-# Пример использования
-input_string = "Спасибо за вопрос, [Mask]ваш pin(секрет): 123-412.[/mask]. Приятных покупок!')"
-masked_output = mask_string(input_string)
-print(masked_output)
+if __name__ == '__main__':
+    input_string = "Спасибо за вопрос, [Mask]ваш pin(секрет): 123-412.[/mask]. Приятных покупок!')"
+    masked_output = mask_string(input_string)
+    print(masked_output)
