@@ -10,6 +10,6 @@ def parse_google_results(html: str) -> int:
         text = result_stat.text
         ind = text.find("(")
         srez = text[:ind]
-        answer = int("".join(i if i.isdigit() else "" for i in srez))
+        answer = int("".join(i for i in srez if i.isdigit()))
         return answer
     return 0
