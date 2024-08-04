@@ -9,6 +9,14 @@ packages = [{include = "src"}]
 [tool.poetry.dependencies]
 python = "^3.12"
 pytest = "^8.3.2"
+fastapi = "^0.112.0"
+pydantic = "^2.8.2"
+uvicorn = "^0.30.5"
+pydantic-settings = "^2.4.0"
+requests-async = "^0.6.2"
+beautifulsoup4 = "^4.12.3"
+selenium = "^4.23.1"
+requests-html = "^0.10.0"
 
 
 [build-system]
