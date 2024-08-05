@@ -14,4 +14,5 @@ async def main(req):
             print("Body:", html[:15], "...")
 
 
-asyncio.run(main("гугл дно"))
+for i in "kljkl":
+    asyncio.run(main(str(i)))
