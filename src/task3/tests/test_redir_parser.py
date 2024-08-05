@@ -1,4 +1,4 @@
-from src.task3.app.services.test_request import redirect
+from task3.app.services.redirect import redirect
 from src.task3.app.services.parser import parse_google_results
 
 
