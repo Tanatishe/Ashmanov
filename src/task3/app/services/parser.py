@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import re
 
 
 def parse_google_results(html: str) -> int:
