@@ -14,4 +14,4 @@ async def main(req):
             print("Body:", html[:15], "...")
 
 
-asyncio.run(main("гугл дно"))
+asyncio.run(main("test search"))
